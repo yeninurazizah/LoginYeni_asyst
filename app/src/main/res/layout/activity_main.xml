@@ -7,20 +7,33 @@
     android:orientation="vertical"
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
+    android:background="#0ab0ef"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_pgn"
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/username_et"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:hint="Username"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
         android:textAlignment="center" />
 
     <EditText
         android:id="@+id/password_et"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:inputType="textPassword"
         android:textAlignment="center" />
 
     <Button
@@ -28,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#5363ba"
+        android:background="#365a8a"
         android:text="Login"
         android:textColor="#ffffff" />
 

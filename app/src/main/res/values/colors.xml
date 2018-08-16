@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="denimBlue">#355989</color>
+    <color name="peacokBlue">#9f005c9c</color>
+    <color name="pumpkinOrange">#f07e01</color>
+    <color name="veryLightBlue">#ebf3ff</color>
+    <color name="azure">#01aef0</color>
+    <color name="text">#4a4a4a</color>
 </resources>
