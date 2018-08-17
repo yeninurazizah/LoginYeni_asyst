@@ -19,7 +19,7 @@ public class ApiClient {
             httpClient.addInterceptor(logging);
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://rallycoding.herokuapp.com/api/")
+                    .baseUrl("http://pgntest.asyst.co.id/api/v1/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build())
                     .build();
