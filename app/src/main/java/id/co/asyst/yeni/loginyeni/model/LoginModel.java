@@ -1,6 +1,7 @@
 package id.co.asyst.yeni.loginyeni.model;
 
 public class LoginModel {
+
     String username;
     String password;
 

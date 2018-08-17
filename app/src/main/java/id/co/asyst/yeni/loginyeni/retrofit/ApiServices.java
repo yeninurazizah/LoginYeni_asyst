@@ -1,20 +1,21 @@
 package id.co.asyst.yeni.loginyeni.retrofit;
 
-import id.co.asyst.yeni.loginyeni.model.LoginModel;
-import id.co.asyst.yeni.loginyeni.model.LoginRequest;
+import id.co.asyst.yeni.loginyeni.retrofit.request.LoginRequest;
+import id.co.asyst.yeni.loginyeni.retrofit.request.PgnRequest;
 import id.co.asyst.yeni.loginyeni.retrofit.response.LoginResponse;
 import id.co.asyst.yeni.loginyeni.retrofit.response.PgnResponse;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 
 public interface ApiServices {
 
-    @GET("Login/getProfileInfo")
+    @POST("Login/getProfileInfo")
     Call<LoginResponse> getProfileInfo(@Body LoginRequest loginRequest);
 
     @GET("Task/getAllTask")
-    Call<PgnResponse> getProfileInfo(@Body LoginModel loginModel);
+    Call<PgnResponse> getAllTask(@Body PgnRequest pgnRequest);
 
 
 
