@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:id="@+id/cardview"
+    android:layout_margin="3dp"
     android:background="@color/veryLightBlue">
 
     <RelativeLayout
@@ -19,20 +19,20 @@
             android:layout_marginTop="5dp"
             android:ellipsize="end"
             android:textAllCaps="true"
-            android:textColor="#315586"
+            android:textColor="@color/denimBlue"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:fontFamily="sans-serif-condensed"
             tools:text="YENI NUR AZIZAH" />
 
         <TextView
-            android:id="@+id/id_tv"
+            android:id="@+id/customerid_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:ellipsize="end"
-            android:textColor="#5c97bf"
+            android:textColor="@color/peacokBlue"
             android:textSize="15sp"
             tools:text="#025548910" />
 
@@ -41,50 +41,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="45dp"
             android:textAllCaps="true"
-            android:textColor="#4e4d4d"
+            android:textColor="@color/text"
             android:textSize="12sp"
-            app:fontFamily="sans-serif-condensed"
             tools:text="JL. SUDIRMAN BARU" />
 
         <TextView
-            android:id="@+id/date_tv"
+            android:id="@+id/startdate_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="70dp"
-            android:textColor="#4e4d4d"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/text"
             android:textSize="12sp"
-            app:fontFamily="sans-serif-condensed"
             tools:text="Selasa, 10 Jan 2018" />
 
         <TextView
-            android:id="@+id/detail_tv"
+            android:id="@+id/taskid_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="5dp"
-            android:background="#02aff0"
-            android:text=" 4371 "
-            android:textColor="#ffffff" />
+            android:layout_alignEnd="@+id/customerid_tv"
+            android:layout_alignRight="@+id/customerid_tv"
+            android:layout_alignTop="@+id/startdate_tv"
+            android:background="@color/azure"
+            android:text="  4371 "
+            android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/done_date_tv"
+            android:id="@+id/finishdate_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/date_tv"
+            android:layout_below="@id/startdate_tv"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="15dp"
             android:background="@color/veryLightBlue"
             android:gravity="center"
             android:textColor="@color/pumpkinOrange"
             android:textSize="12sp"
-            app:fontFamily="sans-serif-condensed"
             tools:text=" Selesai pada 12 Jan 2018 " />
 
 

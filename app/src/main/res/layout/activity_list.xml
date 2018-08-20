@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="3dp"
     android:background="@color/veryLightBlue"
+    android:paddingRight="3dp"
     tools:context=".ListActivity">
 
     <android.support.v7.widget.RecyclerView
@@ -17,5 +18,10 @@
 
     </android.support.v7.widget.RecyclerView>
 
+    <!--<ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_alignParentBottom="true"/>-->
 
-</LinearLayout>
+</RelativeLayout>

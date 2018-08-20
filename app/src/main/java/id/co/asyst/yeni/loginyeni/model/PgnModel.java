@@ -8,6 +8,15 @@ public class PgnModel {
     String finishDate;
     String customer_id;
     String task_id;
+    String taskActivity_id;
+
+    public String getTaskActivity_id() {
+        return taskActivity_id;
+    }
+
+    public void setTaskActivity_id(String taskActivity_id) {
+        this.taskActivity_id = taskActivity_id;
+    }
 
     public String getCustomer_name() {
         return customer_name;
